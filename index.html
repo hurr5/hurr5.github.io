@@ -339,24 +339,22 @@
       </div>
     </div>
   </section>    
-  
-  <section class="container feedback">
-    <h2>// напишите нам</h2>
-    <form class="feedback__form">
-      <h3>Заполните анкету и мы свяжемся с вами в течение часа</h3>
-      <label>
-        <input type="text">
-      </label>
-      <label>
-        <input type="text">
-      </label>
-      <label>
-        <input type="text">
-      </label>
-      <label>
-        <input type="text">
-      </label>
-    </form>
-  </section>
-</body>
+    
+    <section class="container feedback">
+      <h2 class="feedback__title">// напишите нам</h2>
+      <div class="feedback__container">
+        <form class="feedback__form">
+            <h3 class="feedback__descr">ЗАПОЛНИТЕ АНКЕТУ И МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ ТРЕХ ДНЕЙ:</h3>
+            <input type="text" id="name" class="feedback__input" placeholder="ФИО" required>
+            <input type="tel" id="phone" class="feedback__input" placeholder="Номер телефона" required>
+            <input type="email" id="email" class="feedback__input" placeholder="E-mail" required>
+            <textarea id="message" class="feedback__textarea" placeholder="Комментарий" rows="4" required></textarea>
+            <div class="feedback__submit">
+              <span class="feedback__privacy">Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</span>
+              <button type="submit" class="feedback__btn">Отправить</button>
+            </div>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
