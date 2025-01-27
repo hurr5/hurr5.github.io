@@ -77,6 +77,43 @@ h3 {
   color: var(--secondary-grey);
 }
 
+.btn {
+  padding: 10px 40px;
+  background-color: var(--primary-yellow);
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: .05em;
+  font-family: Handjet;
+  color: var(--primary-purple);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+  z-index: 1;
+}
+
+.btn-container {
+  position: relative;
+}
+
+.btn-bg {
+  position: absolute;
+  left: 0;
+  z-index: -1;
+}
+
+.btn:hover {
+  background-color: #EBE965;
+  border: 1px solid var(--primary-purple);
+  transform: translate(-10px, -8px);
+  transition: all 0.3s;
+}
+
+.btn:active {
+  background-color: var(--primary-purple);
+  color: #EBE965;
+}
+
 /* Главная */
 
 header {
@@ -385,46 +422,7 @@ nav {
 }
 
 .services__btn-container {
-  position: relative;
   margin: 48px 0 0 10px;
-}
-
-/* Сделать общий класс для кнопок позже */
-.services__btn {
-  padding: 10px 40px;
-  background-color: var(--primary-yellow);
-  font-size: 25px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: .05em;
-  font-family: Handjet;
-  color: var(--primary-purple);
-  border: none;
-  cursor: pointer;
-  transition: all 0.3s;
-  z-index: 1;
-}
-
-.services__btn-bg {
-  position: absolute;
-  left: 0;
-  z-index: -1;
-}
-
-.services__btn:hover {
-  background-color: #EBE965;
-  border: 1px solid var(--primary-purple);
-  transform: translate(-10px, -8px);
-  transition: all 0.3s;
-}
-
-.services__btn:hover::before {
-  opacity: 1;
-}
-
-.services__btn:active {
-  background-color: var(--primary-purple);
-  color: #EBE965;
 }
 
 /* Секция partners */
@@ -546,11 +544,6 @@ nav {
   z-index: -1;
 }
 
-.swiper-news-item:active img {
-  overflow: hidden;
-  transform: scale(4);
-}
-
 .swiper-slide p {
   font-size: 20px;
   line-height: .05em;
@@ -622,13 +615,16 @@ nav {
   width: 100%;
   border-radius: 7px;
   box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .feedback__descr {
   width: 100%;
 }
 
-.feedback__form {
+.feedback__fields {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -689,10 +685,27 @@ nav {
   background-color: #0056b3;
 }
 
+.feedback__submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.feedback__btn {
+  margin-left: 30px;
+}
+
 .feedback__privacy {
   font-family: PT Sans;
   font-weight: 400;
   font-size: 10px;
   letter-spacing: .05em;
   color: #999999;
+  width: 160px;
+  text-align: right;
+}
+
+/* Footer */
+
+.footer__divider img {
+  width: 100%;
 }

@@ -187,9 +187,9 @@
       <div class="services__about">
         <h3 class="services__title">Инфраструктурные ИТ-решения и системы</h3>
         <p class="description services__description">Равным образом, высококачественный прототип будущего проекта предполагает независимые способы реализации стандартных подходов. Приятно, граждане, наблюдать, как непосредственные участники технического прогресса, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объективно рассмотрены соответствующими инстанциями.</p>
-        <div class="services__btn-container">
-          <button class="services__btn">Продолжить</button>
-          <img src="./icons/btnBg.svg" class="services__btn-bg"/>
+        <div class="services__btn-container btn-container">
+          <button class="btn">Продолжить</button>
+          <img src="./icons/btnServicesBG.svg" class="btn-bg"/>
         </div>
       </div>
     </div>
@@ -197,9 +197,9 @@
       <div class="services__about">
         <h3 class="services__title">решения по информационной безопасности</h3>
         <p class="description services__description">Равным образом сложившаяся структура организации способствует подготовки и реализации системы обучения кадров, соответствует насущным потребностям. Идейные соображения высшего порядка, а также сложившаяся структура организации требуют от нас анализа соответствующий условий активизации. Задача организации, в особенности же сложившаяся структура организации представляет собой интересный эксперимент проверки существенных финансовых и административных условий...</p>
-        <div class="services__btn-container">
-          <button class="services__btn">Продолжить</button>
-          <img src="./icons/btnBg.svg" class="services__btn-bg"/>
+        <div class="services__btn-container btn-container">
+          <button class="btn">Продолжить</button>
+          <img src="./icons/btnServicesBG.svg" class="btn-bg"/>
         </div>
       </div>
       <img src="./icons/services/eye.svg" class="services__icon"/>
@@ -210,9 +210,9 @@
         <h3 class="services__title">Системы безопасности</h3>
         <p class="description services__description">Современные технологии достигли такого уровня, что социально-экономическое развитие, в своём классическом представлении, допускает внедрение укрепления моральных ценностей. Однозначно, акционеры крупнейших компаний объявлены нарушающими общечеловеческие нормы этики и морали. Кстати,  стремящиеся вытеснить традиционное производство, нанотехнологии, вне зависимости от их уровня, должны быть разоблачены.
           Повседневная практика показывает, что высокотехнологичная концепция общественного уклада предопределяет высокую востребованность экономической целесообразности принимаемых решений. Ясность нашей позиции очевидна: разбавленное изрядной долей эмпатии, </p>
-        <div class="services__btn-container">
-          <button class="services__btn">Продолжить</button>
-          <img src="./icons/btnBg.svg" class="services__btn-bg"/>
+        <div class="services__btn-container btn-container">
+          <button class="btn">Продолжить</button>
+          <img src="./icons/btnServicesBG.svg" class="btn-bg"/>
         </div>
       </div>
     </div>
@@ -344,17 +344,27 @@
       <h2 class="feedback__title">// напишите нам</h2>
       <div class="feedback__container">
         <form class="feedback__form">
-            <h3 class="feedback__descr">ЗАПОЛНИТЕ АНКЕТУ И МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИИ ТРЕХ ДНЕЙ:</h3>
-            <input type="text" id="name" class="feedback__input" placeholder="ФИО" required>
-            <input type="tel" id="phone" class="feedback__input" placeholder="Номер телефона" required>
-            <input type="email" id="email" class="feedback__input" placeholder="E-mail" required>
-            <textarea id="message" class="feedback__textarea" placeholder="Комментарий" rows="4" required></textarea>
+            <div class="feedback__fields">
+              <h3 class="feedback__descr">ЗАПОЛНИТЕ АНКЕТУ И МЫ СВЯЖЕМСЯ С ВАМИ В ТЕЧЕНИЕ ТРЕХ ДНЕЙ:</h3>
+              <input type="text" id="name" class="feedback__input" placeholder="ФИО" required>
+              <input type="tel" id="phone" class="feedback__input" placeholder="Номер телефона" required>
+              <input type="email" id="email" class="feedback__input" placeholder="E-mail" required>
+              <textarea id="message" class="feedback__textarea" placeholder="Комментарий" rows="4" required></textarea>
+            </div>
             <div class="feedback__submit">
               <span class="feedback__privacy">Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</span>
-              <button type="submit" class="feedback__btn">Отправить</button>
+              <div class="feedback__btn btn-container">
+                <button type="submit" class="btn">Отправить</button>
+                <img src="./icons/btnSubmitBG.svg" class="btn-bg"/>
+              </div>
             </div>
         </form>
       </div>
     </section>
+    <footer>
+      <div class="footer__divider">
+        <img src="./icons/footer/FooterBG.svg">
+      </div>
+    </footer>
   </body>
 </html>
