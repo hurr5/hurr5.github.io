@@ -1,8 +1,9 @@
 header {
-    background: url("../img/BG.jpg") no-repeat center/cover;
-    padding-top: 40px;
-    height: 900px;
-  }
+  position: relative;
+  background: url("../img/BG.jpg") no-repeat center/cover;
+  padding-top: 40px;
+  height: 900px;
+}
   
   nav {
     display: flex;

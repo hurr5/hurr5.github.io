@@ -7,6 +7,10 @@
     padding: 55px 10px;
     width: 1056px;
   }
+
+  .services__item:nth-child(even) {
+    flex-direction: row-reverse;
+  }
   
   .services__about {
     height: 200px;
@@ -16,7 +20,7 @@
     margin: 0 40px;
   }
   
-  .services__title {
+  .services__title_desktop {
     font-size: 40px;
     line-height: 44px;
     letter-spacing: .06em;
@@ -35,3 +39,6 @@
     margin: 48px 0 0 10px;
   }
   
+  .services__title_mobile {
+    display: none;
+  }
