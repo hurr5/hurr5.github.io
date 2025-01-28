@@ -22,22 +22,34 @@
     <div class="container">
       <nav>
         <a href="#">
-          <img src="./icons/logo.svg" class="logo" alt="logo">
+          <svg width="45" height="46" viewBox="0 0 45 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.7343 16.2343H29.4231V29.9231H15.7343V16.2343Z" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M45 23C45 35.4264 34.9264 45.5 22.5 45.5C10.0736 45.5 0 35.4264 0 23C0 10.5736 10.0736 0.5 22.5 0.5C34.9264 0.5 45 10.5736 45 23ZM22.5 39.049C31.2767 39.049 38.3916 31.934 38.3916 23.1573C38.3916 14.3806 31.2767 7.26574 22.5 7.26574C13.7233 7.26574 6.60839 14.3806 6.60839 23.1573C6.60839 31.934 13.7233 39.049 22.5 39.049Z" />
+          </svg>            
         </a>
         <div class="hamburger">
-          <img src="./icons/hamburger.svg" alt="hamburger">
+          <svg width="35" height="36" viewBox="0 0 35 36" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.485107 0.366028H14.1739V14.0548H0.485107V0.366028Z" />
+            <path d="M21.3112 0.366028H35.0001V14.0548H21.3112V0.366028Z" />
+            <path d="M21.3112 21.9451H35.0001V35.6339H21.3112V21.9451Z" />
+            <path d="M0.485114 21.8938H14.1739V35.5826H0.485114V21.8938Z" />
+          </svg>            
         </div>
       </nav>
       <h1 class="title">
         <span class="title--gradient">БСБ-</span>
         <span class="title--bordered">бизнес</span>
       </h1>
+      <div class="title--mobile">
+        <img src="./icons/title.svg"/>
+      </div>
       <div class="title__description">
         <p>ЭКСПЕРТИЗА В ОБЛАСТИ <br>
           ИНФОРМАЦИОННЫХ ТЕХНОЛОГИЙ И БЕЗОПАСНОСТИ</p>
       </div>
     </div>
-    <img class="logo--large" src="./img/largeLogoHalf.png"></img>
+      <img class="logo--mobile" src="./img/mobileLogo.png" alt="logo">
+      <img class="logo--desktop" src="./img/largeLogoHalf.png" alt="Логотип">
   </header>
 
   <section class="container about-us">
@@ -53,34 +65,40 @@
         <div div class="about-us__step-number--yellow about-us__step-number">
           1
         </div>
-        <h3 class="about-us__step-title">
-          Комплексные ИТ-решения
-        </h3>
-        <p class="description about-us__step-description">
-          для обзора корпоративных клиентов и госзаказчиков
-        </p>
+        <div class="about-us__step-text">
+          <h3 class="about-us__step-title">
+            Комплексные ИТ-решения
+          </h3>
+          <p class="description about-us__step-description">
+            для обзора корпоративных клиентов и госзаказчиков
+          </p>
+        </div>
       </li>
       <li class="about-us__step">
         <div class="about-us__step-number--purple about-us__step-number">
           2
         </div>
-        <h3 class="about-us__step-title">
-          Опыт реализации
-        </h3>
-        <p class="description about-us__step-description">
-          сложных технологических проектов
-        </p>
+        <div class="about-us__step-text">
+          <h3 class="about-us__step-title">
+            Опыт реализации
+          </h3>
+          <p class="description about-us__step-description">
+            сложных технологических проектов
+          </p>
+        </div>
       </li>
       <li class="about-us__step">
         <div class="about-us__step-number--grey about-us__step-number">
           3
         </div>
-        <h3 class="about-us__step-title">
-          Целевые компетенции
-        </h3>
-        <p class="description about-us__step-description">
-          по внедрению отраслевых ИТ-решений
-        </p>
+        <div class="about-us__step-text">
+          <h3 class="about-us__step-title">
+            Целевые компетенции
+          </h3>
+          <p class="description about-us__step-description">
+            по внедрению отраслевых ИТ-решений
+          </p>
+        </div>
       </li>
     </ul>
   </section>
@@ -146,7 +164,6 @@
       </div>
     </div>
   </section>
-
 
   <section class="container skills">
     <h2>// уровень экспертности нашей команды</h2>
@@ -277,7 +294,7 @@
     </div>
   </section>
 
-  <section class="partners">
+  <!-- <section class="partners">
     <h2 class="partners__title container">// партнеры</h2>
     <div class="swiper swiper-partners">
       <div class="swiper-wrapper swiper-partners-wrapper">
@@ -333,9 +350,9 @@
       <div class="swiper-button-prev"></div>
       <div class="swiper-button-next"></div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="news">
+  <!-- <section class="news">
     <div class="news__container">
       <div class="swiper swiper-news">
         <div class="swiper-wrapper swiper-news-wrapper">
@@ -402,9 +419,9 @@
         <div class="swiper-button-next news-button-next"></div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <section class="container feedback">
+  <!-- <section class="container feedback">
     <h2 class="feedback__title">// напишите нам</h2>
     <div class="feedback__container">
       <form class="feedback__form">
@@ -425,9 +442,9 @@
         </div>
       </form>
     </div>
-  </section>
+  </section> -->
 
-  <footer class="footer">
+  <!-- <footer class="footer">
     <div class="footer__divider">
       <img src="./icons/footer/FooterBG.svg" alt="Фон футера">
     </div>
@@ -518,7 +535,7 @@
         <p>Разработано в <img src="./icons/footer/asteqLogo.svg" alt="asteq"></img></p>
       </div>
     </div>
-  </footer>
+  </footer> -->
 </body>
 
 </html>

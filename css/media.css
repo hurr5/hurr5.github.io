@@ -1,0 +1,191 @@
+@media (max-width: 500px) {
+	* {
+		/* letter-spacing: .05em; */
+	}
+	header {
+		height: 640px;
+		padding: 18px;
+		position: relative;
+	}
+
+	h2 {
+		width: 328px;
+		font-size: 18px;
+		font-weight: 900;
+		margin-top: 64px;
+		line-height: 20px;
+	}
+
+	h3 {
+		line-height: 20px;
+	}
+
+	.title {
+		display: none;
+	}
+
+	.title--mobile {
+		display: block;
+		margin-top: 72px;
+	}
+
+	.title__description {
+		margin-top: 10px;
+		font-size: 18px;
+		color: var(--primary-purple);
+		font-weight: 700;
+	}
+
+	.logo--mobile {
+		display: block;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 280px;
+		height: 280px;
+	}
+
+	.logo--desktop {
+		display: none;
+	}
+
+	.container {
+		max-width: 328px;
+	}
+
+	.desktop {
+		display: none;
+	}
+
+	.mobile {
+		display: block;
+	}
+
+	.about-us__description {
+		display: none;
+	}
+
+	.about-us__steps {
+		flex-direction: column;
+		margin-top: 64px;
+	}
+
+	.about-us__step-text {
+		width: 232px;
+		margin-left: 10px;
+	}
+
+	.about-us__step-title {
+		margin-top: 0;
+		font-size: 16px;
+	}
+
+	.about-us__step-description {
+		font-size: 16px;
+	}
+
+	.about-us__step {
+		flex-direction: row;
+	}
+	
+	.about-us__step-number {
+		font-size: 30px;
+		width: 60px;
+		height: 60px;
+	}
+	
+	.about-us__step:not(:last-child)::after {
+		width: 5px;
+    height: 100%;
+		top: 50%;
+		left: 9%;
+	}
+	.about-us__step:nth-child(2)::after {
+    background: linear-gradient(180deg, #2D2650, #F5F5F5);
+  }
+
+	.about-us__step:last-child {
+		margin-bottom: 0;
+	}
+
+	/* Solutions */
+
+	.solutions {
+		margin-bottom: 150px;
+	}
+
+	.solutions__types {
+		flex-direction: column;
+		gap: 150px;
+	}
+
+	.solutions__icon {
+		width: 136px;
+		height: 118px;
+	}
+
+	.solutions__item img {
+		margin: 0 0;
+	}
+	
+	.solutions__item {
+		padding: 0;
+	}
+
+	.solutions__item_title {
+		font-size: 18px;
+		font-weight: 700;
+		letter-spacing: .05em;
+		height: 100%;
+	}
+
+	.solutions__item_description {
+		display: block;
+		font-size: 16px;
+		margin-top: 10px;
+	}
+
+	.solutions__item_text {
+		right: 25px;
+		top: 40px;
+	}
+
+	.solutions__hover-icon {
+		display: none;
+		width: 0;
+		height: 0;
+	}
+
+	.solutions__more {
+		opacity: 1;
+	}
+
+	.solutions__more span {
+		opacity: 0;
+	}
+
+	/* skills */
+
+	.skills__items {
+		gap: 12px 0;
+		flex-direction: column;
+	}
+
+	.skills__percentage {
+		font-size: 80px;
+	}
+
+	.skills__desription {
+		font-size: 16px;
+	}
+
+	/* technologies */
+
+	.technologies__marquee {
+		margin-top: 24px;
+	}
+
+	.technologies__marquee-wrapper--reversed {
+		margin-top: 24px;
+	}
+}

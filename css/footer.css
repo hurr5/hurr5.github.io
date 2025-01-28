@@ -1,0 +1,167 @@
+.footer__divider img {
+    width: 100%;
+  }
+  
+  .footer {
+    background: #fff;
+    padding: 40px 0;
+  }
+  
+  .footer__divider img {
+    width: 100%;
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+  }
+  
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 705px;
+    gap: 24px 50px;
+  }
+  
+  
+  .footer__column h3 {
+    display: inline-block;
+    position: relative;
+    font-size: 25px;
+    font-weight: 700;
+    color: #1d144a;
+    margin-bottom: 10px;
+  }
+  
+  .footer__column a {
+    display: inline-block;
+    font-family: PT Sans;
+    white-space: nowrap;
+    font-size: 14px;
+    color: var(--secondary-grey);
+    text-decoration: none;
+    padding-bottom: 5px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Анимация при наведении на ссылку в футере */
+  
+  .footer__column a::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    opacity: 0;
+    background: #282c34;
+    transition: .6s;
+    left: 0;
+  }
+  
+  .footer__column a:hover:after {
+    opacity: 1;
+    width: 100%;
+  }
+  
+  /* Анимация при наведении на заголовок колонки */
+  
+  .footer__column h3::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    display: block;
+    width: 0;
+    height: 2px;
+    opacity: 0;
+    background: var(--primary-yellow);
+    transition: .6s;
+    left: 0;
+  }
+  
+  .footer__column h3:hover:after {
+    opacity: 1;
+    width: 100%;
+  }
+  
+  .footer__column h3:hover {
+    color: #4A399D;
+  }
+  
+  .footer__contacts {
+    text-align: right;
+    width: 169px;
+  }
+  
+  .footer__phone {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: Handjet;
+    white-space: nowrap;
+    color: var(--primary-purple);
+  }
+  
+  .footer__email:hover,
+  .footer__phone:hover {
+    color: #4A399D;
+  }
+  
+  .footer__email {
+    display: block;
+    margin-top: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Handjet;
+    white-space: nowrap;
+    color: var(--primary-purple);
+  }
+  
+  .footer__address {
+    font-size: 14px;
+    font-family: PT Sans;
+    color: var(--secondary-grey);
+    margin-top: 16px;
+  }
+  
+  .footer__socials {
+    display: flex;
+    gap: 10px;
+    margin-top: 16px;
+    justify-content: flex-end;
+  }
+  
+  .divider {
+    height: 2px;
+    background: var(--primary-yellow);
+    margin: 42px auto;
+    width: 80%;
+  }
+  
+  .footer__legal {
+    display: flex;
+    justify-content: space-between;
+    font-family: PT Sans;
+    font-size: 14px;
+    color: #555454;
+  }
+  
+  .footer__legal a {
+    color: #555454;
+    text-decoration: none;
+  }
+  
+  .footer__socials svg {
+    fill: var(--primary-yellow);
+  }
+  
+  .footer__socials svg:hover {
+    fill: #EBE965;
+  }
+  
+  .footer__socials svg:active {
+    fill: var(--primary-purple);
+  }

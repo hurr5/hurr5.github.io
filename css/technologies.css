@@ -1,0 +1,65 @@
+.technologies__title {
+    margin-top: 80px;
+  }
+  
+  .technologies__marquee-wrapper {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+  
+  .technologies__marquee-wrapper--reversed {
+    margin-top: 152px;
+  }
+  
+  .technologies__marquee {
+    margin-top: 56px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    animation: marquee 30s linear infinite;
+  }
+  
+  .technologies__marquee--reversed {
+    animation: marquee-reversed 45s linear infinite;
+  }
+  
+  @keyframes marquee-reversed {
+    0% {
+      transform: translateX(0);
+    }
+  
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(-100%);
+    }
+  
+    100% {
+      transform: translateX(0%);
+    }
+  }
+  
+  .technologies__marquee-item {
+    display: inline-block;
+    padding: 0 72px;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", serif;
+  }
+  
+  .technologies__marquee-item--purple {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary-yellow);
+  }
+  
+  .technologies__marquee-item--yellow {
+    color: transparent;
+    -webkit-text-stroke: 2px var(--primary-purple);
+  }
+  

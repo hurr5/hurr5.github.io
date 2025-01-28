@@ -1,0 +1,30 @@
+.skills__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 141px 422px;
+  }
+  
+  .skills__item {
+    position: relative;
+  }
+  
+  .skills__percentage {
+    font-size: 140px;
+    font-family: "Eboy-EXTAlpha";
+    color: var(--primary-yellow);
+  }
+  
+  .skills__desription {
+    position: absolute;
+    bottom: -15px;
+    left: calc(10% + 10px);
+    white-space: nowrap;
+    color: var(--primary-purple);
+    padding: 6px 30px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+  }
+  

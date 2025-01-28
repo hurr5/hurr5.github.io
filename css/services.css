@@ -1,0 +1,37 @@
+.services {
+    margin-top: 80px;
+  }
+  
+  .services__item {
+    display: flex;
+    padding: 55px 10px;
+    width: 1056px;
+  }
+  
+  .services__about {
+    height: 200px;
+  }
+  
+  .services__icon {
+    margin: 0 40px;
+  }
+  
+  .services__title {
+    font-size: 40px;
+    line-height: 44px;
+    letter-spacing: .06em;
+    font-weight: 900;
+  }
+  
+  .services__description {
+    margin-top: 24px;
+    -webkit-line-clamp: 4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+  .services__btn-container {
+    margin: 48px 0 0 10px;
+  }
+  
