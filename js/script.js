@@ -32,3 +32,18 @@ const newsSwiper = new Swiper(".swiper-news", {
     },
   },
 })
+
+const hamburger = document.querySelector('.hamburger');
+const menu = document.querySelector('.menu');
+
+hamburger.addEventListener('click', function () {
+  menu.classList.toggle('open');
+  hamburger.classList.toggle('open');
+});
+
+document.addEventListener('keydown', function (e) {
+  if (e.keyCode === 27) {
+    menu.classList.remove('open');
+    hamburger.classList.remove('open');
+  }
+});
