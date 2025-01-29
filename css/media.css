@@ -425,7 +425,6 @@
 
   .footer__legal {
     flex-direction: column;
-    /* text-align: left; */
-    gap: 10px;
+    gap: 15px;
   }
 }

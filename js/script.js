@@ -1,3 +1,6 @@
+
+// Swiper
+
 const partnersSwiper = new Swiper(".swiper-partners", {
   slidesPerView: 3,
   spaceBetween: 100,
@@ -33,17 +36,40 @@ const newsSwiper = new Swiper(".swiper-news", {
   },
 })
 
+// Hamburger
+
 const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
+const menuBtn = document.querySelector('.menu__btn');
+
+function disableScroll() {
+  document.body.style.overflow = 'hidden';
+}
+
+function enableScroll() {
+  document.body.style.overflow = '';
+}
 
 hamburger.addEventListener('click', function () {
   menu.classList.toggle('open');
   hamburger.classList.toggle('open');
+  menuBtn.classList.toggle('open');
+  disableScroll()
+});
+
+menuBtn.addEventListener('click', function () {
+  menu.classList.toggle('open');
+  hamburger.classList.toggle('open');
+  menuBtn.classList.toggle('open');
+  enableScroll()
 });
 
 document.addEventListener('keydown', function (e) {
   if (e.keyCode === 27) {
     menu.classList.remove('open');
     hamburger.classList.remove('open');
+    menuBtn.classList.remove('open');
+    enableScroll()
   }
 });
+

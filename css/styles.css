@@ -1,5 +1,6 @@
-@import 'menu.css';
 @import 'common.css';
+
+@import 'menu.css';
 @import 'header.css';
 @import 'about-us.css';
 @import 'solutions.css';
@@ -9,5 +10,4 @@
 @import 'partners-news.css';
 @import 'feedback.css';
 @import 'footer.css';
-
 @import 'media.css';

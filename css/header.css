@@ -27,7 +27,6 @@ header {
   .hamburger {
     cursor: pointer;
     transition: all .5s ease;
-    z-index: 100;
   }
 
   .hamburger.open {
