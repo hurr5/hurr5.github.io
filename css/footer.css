@@ -10,6 +10,10 @@
   .footer__divider img {
     width: 100%;
   }
+
+  .footer__divider-mobile {
+    display: none;
+  }
   
   .footer__container {
     display: flex;

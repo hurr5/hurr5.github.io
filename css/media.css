@@ -20,6 +20,15 @@
 		line-height: 20px;
 	}
 
+	.btn {
+		font-size: 16px;
+	}
+
+	.btn-bg {
+    width: 154px;
+    height: 58px;
+	}
+
 	.title {
 		display: none;
 	}
@@ -242,6 +251,10 @@
     height: 70px;
 	}
 
+	.swiper-partners-slide {
+		height: 109px;
+	}
+
 	.swiper-partners-slide p {
     font-size: 12px;
 	}	
@@ -255,16 +268,164 @@
 		margin: 0;
 	}
 
+	.swiper-news {
+		padding: 0;
+	}
+
 	.news__container {
-    background: url(../icons/news/newsBG.svg) no-repeat center / cover;
-    background-size: 100%;
+    background: url(../icons/news/newsBG.svg) no-repeat center center;
+		background-size: 100% 367px;
+		width: 360px;
+		height: 267px;
     display: flex;
     align-items: center;
-    max-height: 606px;
-    width: 100%;
+		min-height: 0;
     margin: 0 auto;
 	}
 
+	.swiper-news-item img {
+    max-width: 242px;
+    max-height: 180px;
+}
 
+	.swiper-news-info time {
+    left: 65px;
+		font-size: 12px;
+	}
 
+	.swiper-news-description {
+    left: 95px;
+		bottom: 30px;
+		font-size: 16px;
+		max-width: 182px;
+		min-width: 100px;
+		padding: 0;
+	}
+
+	.swiper-news-description h4 {
+		font-size: 16px;
+		color: #DFDC01;
+	}
+	
+	.swiper-news-description p {
+		font-size: 12px;
+	}
+
+	/* feedback */
+
+	.feedback__container {
+		padding: 0;
+	}
+
+	.feedback__form {
+		padding: 24px 16px;
+		justify-content: center;
+		gap: 12px;
+		min-height: 448px;
+	}
+
+	.feedback__descr {
+		font-size: 12px;
+	}
+
+	.feedback__fields {
+		gap: 16px;
+	}
+
+	.feedback__input {
+		padding: 12px 24px;
+		height: 40px;
+	}
+
+	.feedback__textarea {
+		padding: 12px 24px;
+	}
+
+	#phone {
+		width: 100%;
+	}
+
+	#email {
+		width: 100%;
+	}
+
+	.feedback__privacy {
+		width: 100%;
+		text-align: left;
+	}
+
+	.feedback__submit {
+		flex-direction: column;
+		align-items: flex-end;
+		gap: 12px;
+	}
+
+	.feedback__textarea {
+		height: 120px;
+	}
+
+	.feedback__btn_bg {
+		width: 143px;
+	}
+
+	/* footer */
+
+	.footer__divider img {
+		height: 100%;
+	}
+
+	.footer__divider-desktop {
+		display: none;
+	}
+
+	.footer__divider-mobile {
+		display: block;
+	}
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+  }
+
+	.footer__logo {
+		display: none;
+	}
+
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+		align-items: left;
+  }
+
+  .footer__column h3 {
+    font-size: 20px; /* Можно уменьшить размер заголовка */
+  }
+
+  .footer__column a {
+		text-align: left;
+    font-size: 16px; /* Можно немного увеличить размер ссылок */
+  }
+
+  .footer__contacts {
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+	.footer__address {
+		display: none;
+	}
+
+  .footer__socials {
+    justify-content: center;
+  }
+
+  .footer__legal {
+    flex-direction: column;
+    /* text-align: left; */
+    gap: 10px;
+  }
 }

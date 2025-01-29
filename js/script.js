@@ -1,5 +1,5 @@
 const partnersSwiper = new Swiper(".swiper-partners", {
-  slidesPerView: 3, 
+  slidesPerView: 3,
   spaceBetween: 100,
   slidesPerGroup: 3,
   navigation: {
@@ -9,16 +9,16 @@ const partnersSwiper = new Swiper(".swiper-partners", {
   breakpoints: {
     768: {
       slidesPerView: 6,
-      spaceBetween:  90,
+      spaceBetween: 90,
       slidesPerGroup: 6,
+      autoplay: true,
     },
   },
-  autoplay: true,
 });
 
 const newsSwiper = new Swiper(".swiper-news", {
-  slidesPerView: 1, 
-  spaceBetween: 200,
+  slidesPerView: 1,
+  spaceBetween: 10,
   slidesPerGroup: 1,
   navigation: {
     nextEl: ".swiper-button-next",

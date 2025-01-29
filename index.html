@@ -283,7 +283,7 @@
     <div class="services__item">
       <div class="services__container">
         <img src="./icons/services/lock.svg" class="services__icon" />
-        <h3 class="services__title_desktop">Системы безопасности</h3>
+        <h3 class="services__title_mobile">Системы безопасности</h3>
       </div>
       <div class="services__about">
         <h3 class="services__title_desktop">Системы безопасности</h3>
@@ -430,7 +430,7 @@
     </div>
   </section>
 
-  <!-- <section class="container feedback">
+  <section class="container feedback">
     <h2 class="feedback__title">// напишите нам</h2>
     <div class="feedback__container">
       <form class="feedback__form">
@@ -446,16 +446,21 @@
             данных</span>
           <div class="feedback__btn btn-container">
             <button type="submit" class="btn">Отправить</button>
-            <img src="./icons/btnSubmitBG.svg" class="btn-bg" />
+            <img src="./icons/btnSubmitBG.svg" class="btn-bg feedback__btn_bg" />
           </div>
         </div>
       </form>
     </div>
-  </section> -->
+  </section>
 
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="footer__divider">
-      <img src="./icons/footer/FooterBG.svg" alt="Фон футера">
+      <!-- <picture>
+        <source srcset="./icons/btnServicesBgMobile.svg" media="(max-width: 768px)">
+        <img src="./icons/footer/footerBG.svg" class="btn-bg" alt="Кнопка">
+      </picture> -->
+      <img src="./icons/footer/footerBG.svg" alt="Фон футера" class="footer__divider-desktop">
+      <img src="./icons/footer/footerBGMobile.svg" alt="Фон футера" class="footer__divider-mobile">
     </div>
     <div class="container">
       <div class="container footer__container">
@@ -544,7 +549,7 @@
         <p>Разработано в <img src="./icons/footer/asteqLogo.svg" alt="asteq"></img></p>
       </div>
     </div>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
