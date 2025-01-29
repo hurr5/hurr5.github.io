@@ -104,7 +104,7 @@
             <h3>Заинтересовались нашими услугами?</h3>
             <p>Остальте заявку и мы обязательно свяжемся с Вами!</p>
             <div class="menu__btn-container btn-container">
-              <button class="btn">Оставить заявку</button>
+              <button class="btn request">Оставить заявку</button>
               <img src="./icons/btnMenuBG.svg" class="menu__btn-bg" />
             </div>
           </div>
@@ -676,6 +676,39 @@
       </div>
     </div>
   </footer>
+
+  <div class="overlay">
+    <div class="modal">
+        <div class="modal__header">
+            <span>Заявка на услугу</span>
+            <span class="modal__close"></span>
+        </div>
+        <div class="modal__content">
+            <form class="modal__form">
+                <input type="text" class="modal__input" placeholder="ФИО">
+                <input type="tel" class="modal__input" placeholder="Номер телефона">
+                <input type="email" class="modal__input" placeholder="E-mail">
+                <select class="modal__select">
+                    <option value="" disabled selected>Выберите услугу</option>
+                    <option value="1">ИТ-решения и системы</option>
+                    <option value="2">Решения по информационной безопасности</option>
+                    <option value="3">Системы безопасности</option>
+                    <option value="4">Другое</option>
+                </select>
+            </form>
+            <textarea class="modal__textarea" placeholder="Комментарий"></textarea>
+        </div>
+        <div class="modal__footer">
+            <span>Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</span>
+            <div class="feedback__btn btn-container">
+              <button type="submit" class="btn">Отправить</button>
+              <img src="./icons/btnSubmitBG.svg" class="btn-bg feedback__btn_bg" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
 </body>
 
 </html>

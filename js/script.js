@@ -42,11 +42,11 @@ const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu__btn');
 
-function disableScroll() {
+const disableScroll = () => {
   document.body.style.overflow = 'hidden';
 }
 
-function enableScroll() {
+const enableScroll = () => {
   document.body.style.overflow = '';
 }
 
@@ -73,3 +73,35 @@ document.addEventListener('keydown', function (e) {
   }
 });
 
+// Модальное окно
+
+const request = document.querySelector('.request')
+const modal = document.querySelector('.modal');
+const overlay = document.querySelector('.overlay');
+const closeBtn = document.querySelector('.modal__close');
+
+const closeModal = () => {
+  modal.classList.remove('active');
+  overlay.classList.remove('active')
+  setTimeout(() => {
+      overlay.style.display = 'none'; 
+  }, 200);
+}
+
+
+request.addEventListener('click', () => {
+  overlay.style.display = 'block';
+  setTimeout(() => {
+      overlay.classList.add('active')
+      modal.classList.add('active');
+  }, 300); 
+});
+
+
+closeBtn.addEventListener('click', closeModal);
+
+overlay.addEventListener('click', (e) => {
+  if (e.target === overlay) {
+      closeModal();
+  }
+});

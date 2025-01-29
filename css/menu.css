@@ -319,8 +319,8 @@ nav {
 
 .menu__circle img {
   position: absolute;
-  bottom: -100%;
-  right: -42%;
+  bottom: -90%;
+  right: -38%;
 }
 
 .menu__circle img:not(:first-child) {
