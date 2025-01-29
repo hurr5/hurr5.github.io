@@ -12,7 +12,7 @@
     rel="stylesheet">
   <link href="https://db.onlinewebfonts.com/c/71423287a1ddeeb9a02b47a8d3ed8d9d?family=Eboy-EXTAlpha" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -164,7 +164,11 @@
       </div>
       <h1 class="title">
         <span class="title--gradient">БСБ-</span>
-        <span class="title--bordered">бизнес</span>
+        <div class="title__variants">
+          <span class="title--bordered">бизнес</span>
+          <span class="title--bordered">системы</span>
+          <span class="title--bordered">безопасность</span>
+        </div>
       </h1>
       <div class="title--mobile">
         <img src="./icons/title.svg" />
@@ -700,14 +704,27 @@
         </div>
         <div class="modal__footer">
             <span>Нажимая на кнопку "Отправить" вы соглашаетесь на обработку внесенных вами данных</span>
-            <div class="feedback__btn btn-container">
+            <div class="contact__btn btn-container">
               <button type="submit" class="btn">Отправить</button>
               <img src="./icons/btnSubmitBG.svg" class="btn-bg feedback__btn_bg" />
             </div>
         </div>
     </div>
-</div>
+  </div>
 
+  <div class="cookie__modal">
+    <img src="./icons/cookie.svg" alt="Cookie Icon" class="cookie__icon" />
+    <div class="cookie__content">
+      <p class="cookie__text">Для улучшения работы сайта мы используем cookie</p>
+      <div class="cookie__actions">
+        <a href="#" class="cookie__link">Как это работает?</a>
+        <div class="cookie__btn-container btn__container">
+          <button class="btn cookie__btn">Хорошо</button>
+          <img src="./icons/btnOKBg.svg" class="btn-bg cookie__btn-bg" />
+        </div>
+      </div>
+    </div>
+  </div>
 
 </body>
 

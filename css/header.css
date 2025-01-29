@@ -47,13 +47,44 @@ header {
     color: transparent;
     -webkit-text-stroke: 2px var(--primary-purple);
   }
+
+  .title__variants {
+    height: 38px;
+    overflow: hidden;
+  }
   
   .title--bordered {
+    display: block;
     font-size: 40px;
     margin-left: 20px;
     text-transform: uppercase;
     color: transparent;
     -webkit-text-stroke: 2px white;
+    animation: moveUp 15s infinite;
+  }
+
+  @keyframes moveUp {
+    0% {
+      transform: translateY(0);
+    }
+    20% {
+      transform: translateY(0);
+    }
+    30% {
+      transform: translateY(-100%);
+    }
+    50% {
+      transform: translateY(-100%);
+    }
+    60% {
+      transform: translateY(-200%);
+    }
+    90% {
+      transform: translateY(-200%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
   .title__description {

@@ -42,26 +42,16 @@ const hamburger = document.querySelector('.hamburger');
 const menu = document.querySelector('.menu');
 const menuBtn = document.querySelector('.menu__btn');
 
-const disableScroll = () => {
-  document.body.style.overflow = 'hidden';
-}
-
-const enableScroll = () => {
-  document.body.style.overflow = '';
-}
-
 hamburger.addEventListener('click', function () {
   menu.classList.toggle('open');
   hamburger.classList.toggle('open');
   menuBtn.classList.toggle('open');
-  disableScroll()
 });
 
 menuBtn.addEventListener('click', function () {
   menu.classList.toggle('open');
   hamburger.classList.toggle('open');
   menuBtn.classList.toggle('open');
-  enableScroll()
 });
 
 document.addEventListener('keydown', function (e) {
@@ -69,7 +59,6 @@ document.addEventListener('keydown', function (e) {
     menu.classList.remove('open');
     hamburger.classList.remove('open');
     menuBtn.classList.remove('open');
-    enableScroll()
   }
 });
 
@@ -80,11 +69,11 @@ const modal = document.querySelector('.modal');
 const overlay = document.querySelector('.overlay');
 const closeBtn = document.querySelector('.modal__close');
 
-const closeModal = () => {
+const closeModal = (e) => {
   modal.classList.remove('active');
   overlay.classList.remove('active')
   setTimeout(() => {
-      overlay.style.display = 'none'; 
+    overlay.style.display = 'none';
   }, 200);
 }
 
@@ -92,16 +81,33 @@ const closeModal = () => {
 request.addEventListener('click', () => {
   overlay.style.display = 'block';
   setTimeout(() => {
-      overlay.classList.add('active')
-      modal.classList.add('active');
-  }, 300); 
+    overlay.classList.add('active')
+    modal.classList.add('active');
+  }, 300);
 });
 
-
-closeBtn.addEventListener('click', closeModal);
+closeBtn.addEventListener('click', closeModal());
 
 overlay.addEventListener('click', (e) => {
   if (e.target === overlay) {
-      closeModal();
+    closeModal();
   }
+});
+
+// Cookies
+
+document.addEventListener("DOMContentLoaded", function () {
+  const modal = document.querySelector(".cookie__modal");
+  const acceptBtn = document.querySelector(".cookie__btn");
+
+  if (!localStorage.getItem("cookieAccepted")) {
+    setTimeout(() => {
+      modal.classList.add("show");
+    }, 3000);
+  }
+
+  acceptBtn.addEventListener("click", function () {
+    modal.classList.remove("show");
+    localStorage.setItem("cookieAccepted", "true");
+  });
 });

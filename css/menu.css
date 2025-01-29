@@ -319,16 +319,18 @@ nav {
 
 .menu__circle img {
   position: absolute;
-  bottom: -90%;
-  right: -38%;
+  width: 1200px;
+  height: 1200px;
+  bottom: -600px;
+  right: -600px;
 }
 
 .menu__circle img:not(:first-child) {
   position: absolute;
-  width: 95%;
-  height: 95%;
-  bottom: -55%;
-  right: -47%;
+  width: 800px;
+  height: 800px;
+  bottom: -400px;
+  right: -400px;
 }
 
 .menu__circle img {

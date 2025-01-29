@@ -1,0 +1,70 @@
+.cookie__modal {
+  position: fixed;
+  bottom: -300px;
+  right: 0px;
+  width: 582px;
+  padding: 40px 56px;
+  background: linear-gradient(136.23deg, rgba(223, 220, 1, 0.8) -11.496%,rgba(74, 57, 157, 0.8) 102.599%);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  transition: all 0.5s ease-in-out;
+}
+
+.cookie__modal.show {
+  bottom: 0;
+}
+
+.cookie__icon {
+  width: 130px;
+  height: 120px;
+}
+
+.cookie__content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex: 1;
+}
+
+.cookie__text {
+  font-size: 20px;
+  font-family: Handjet;
+  font-weight: 700;
+  letter-spacing: .05em;
+  margin-bottom: 20px;
+}
+
+.cookie__actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.cookie__link {
+  display: inline-block;
+  color: var(--primary-yellow);
+  font-family: Handjet;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.cookie__btn-container {
+  position: relative;
+  height: 30px;
+  width: 60px;
+  font-size: 20px;
+}
+
+.cookie__btn {
+  font-size: 20px;
+}
+
+.cookie__btn-bg {
+  bottom: -17px;
+}
