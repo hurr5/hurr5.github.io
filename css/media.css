@@ -614,4 +614,8 @@
 		width: 144px;
 	}
 
+	.scroll-to-top {
+    display: none !important;
+  }
+
 }
