@@ -122,3 +122,26 @@ document.addEventListener("DOMContentLoaded", function () {
     localStorage.setItem("cookieAccepted", "true");
   });
 });
+
+// Вернуться наверх
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollToTopBtn = document.getElementById("scrollToTop");
+
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 1700) {
+      scrollToTopBtn.classList.add("show");
+      scrollToTopBtn.classList.remove("hide");
+    } else {
+      scrollToTopBtn.classList.add("hide");
+      setTimeout(() => scrollToTopBtn.classList.remove("show"), 300);
+    }
+  });
+
+  scrollToTopBtn.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+});
