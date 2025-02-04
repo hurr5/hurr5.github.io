@@ -234,6 +234,10 @@
     border: 5px solid #4A399D;
   }
 
+  .swiper-news-item:hover h4 {
+    color: var(--primary-yellow);
+  }
+
   .swiper-news-item:hover .swiper-news-background {
     color: var(--primary-yellow);
   }
