@@ -6,8 +6,8 @@ const partnersSwiper = new Swiper(".swiper-partners", {
   spaceBetween: 30,
   slidesPerGroup: 3,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".partners-button-next",
+    prevEl: ".partners-button-prev",
   },
   breakpoints: {
     768: {
@@ -29,8 +29,8 @@ const newsSwiper = new Swiper(".swiper-news", {
   spaceBetween: 10,
   slidesPerGroup: 1,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".news-button-next",
+    prevEl: ".news-button-prev",
   },
   breakpoints: {
     768: {
