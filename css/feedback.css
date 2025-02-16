@@ -34,6 +34,7 @@
     font-size: 14px;
     border: 2px solid #999999;
     border-radius: 7px;
+    transition: all 0.3s ease;
   }
   
   #phone {
@@ -53,6 +54,7 @@
     border: 2px solid #999999;
     border-radius: 7px;
     resize: none;
+    transition: all 0.3s ease;
   }
   
   .feedback__input:focus,
