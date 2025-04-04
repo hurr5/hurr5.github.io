@@ -20,10 +20,10 @@
 ## 📂 Структура проекта  
 ```bash
 📦 bsb-security
-├── 📂 src
-│   ├── 📂 components  # Компоненты приложения
-│   ├── 📂 styles      # CSS-модули
-│   ├── 📂 assets      # Медиафайлы
-│   └── index.html
-├── 📜 README.md
-└── 📜 package.json
+├── 📂 css       # Стили проекта
+├── 📂 icons     # Иконки
+├── 📂 img       # Изображения
+├── 📂 js        # Скрипты
+├── 📜 index.html
+└── 📜 README.md
+```
